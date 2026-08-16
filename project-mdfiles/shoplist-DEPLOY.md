@@ -72,6 +72,9 @@ gcloud run services describe shoplist --region=us-central1 --format="value(statu
 https://<service-url>/g/<access-token>
 ```
 
+#get current token from secret manager
+gcloud secrets versions access latest --secret="shoplist-access-token" --project=my-generic-project-504019
+
 ## Features included
 
 - **Categories** — fully editable from the Repository page (add/remove, each with its own tax-exempt flag); no longer hardcoded, seeds 11 sensible defaults on first load
